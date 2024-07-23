@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./images/bg.jpg");
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+   
+}
+.container{
+    background-color:white;
+    color: black;
+    width: 340px;
+    height: 530px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    margin-bottom: 15px;
+    
+}
+.top-bar{
+ display: flex;
+ gap: 5rem;
+    
+}
+
+.top-bar i{
+    cursor: pointer;
+}
+
+.song-details{
+    margin-top: 20px;
+}
+.song-details .song-image{
+    width: 280px;
+    height: 250px;
+    border-radius: 10px;
+    border: solid 1px gray;
+}
+
+.song-details .title{
+    text-transform:uppercase;
+}
+.song-details .artist{
+    color: rgb(45, 43, 43);
+}
+
+
+.song-progress-area {
+    height: 6px;
+    width: 82%;
+    border-radius: 50px;
+    background:rgb(231, 228, 228);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .song-progress-bar {
+    height:inherit;
+    width:0%;
+    position: relative;
+    border-radius: inherit;
+    background:black;
+  }
+  .song-progress-bar::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    top: 50%;
+    right: -10px;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+    background: black;
+    transition: opacity 0.2s ease;
+  }
+  .song-progress-area .song-progress-bar::before {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+
+
+.song-timer{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    margin-top: 10px;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    gap: 39px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.controls i:nth-child(3){
+    font-size:3rem;
+}
+
+.controls i{
+    cursor: pointer;
+}

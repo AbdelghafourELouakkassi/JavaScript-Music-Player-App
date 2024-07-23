@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Music Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <i class="fa-solid fa-chevron-down"></i>
+            <span>Now Playing</span>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div class="song-details">
+            <img class="song-image" >
+            <p class="title"></p>
+            <p class="artist"></p>
+        </div>
+        <div class="song-progress-area">
+            <div class="song-progress-bar">
+                <audio id="main-audio" src=""></audio>
+            </div>
+        </div>
+        <div class="song-timer">
+            <span class="current-time">00:00</span>
+            <span class="max-duration">00:00</span>
+        </div>
+        <div class="controls">
+            <i  class="material-symbols-outlined" id="repeat-playlist" title="Playlist looped">repeat</i>
+            <i id="prev-song" class="fa-solid fa-backward-step"></i>
+            <i id="play-pause-song" class="fa-regular fa-circle-play " ></i>
+            <i id="next-song" class="fa-solid fa-forward-step"></i>
+            <i id="music-list" class="fa-solid fa-list"></i>
+        </div>
+
+    </div>
+
+
+<script src="/List_of_songs.js"></script>
+<script src="/main.js"></script>
+</body>
+</html>
